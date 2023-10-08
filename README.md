@@ -37,3 +37,20 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+<br>
+<br>
+<hr/>
+<br>
+
+# Learning Resources
+
+- [MDN javascript documentation](https://)
+- [Node JavaScript Reference](https://nodejs.dev/en/learn/how-much-javascript-do-you-need-to-know-to-use-nodejs) 
+- [Event Loop Concept](latentflip.com/loupe/)
+
+- [ReactJs Documentation](https://react.dev/learn)
+- [Vite](https://vitejs.dev/guide/)
+- [vite doc](https://devdocs.io/vite/guide/index)
