@@ -1,34 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import chefHat from './assets/chefhat.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='App'>
+      <div className='left-side-content'>
+        <h1 id='title'>Recipe Box</h1>
+
+        <div className='tagline-wrapper'>
+          {/* tagline */}
+          <p id='tagline'> Unleash your <span id='light_text'> inner </span> chef </p>
+
+          {/* svg chefhat image */}
+          <span><img src={chefHat}></img></span>
+        </div>
+
+        <p id='landing_p'>Find recipes for the food you love and flavors you didn't know existed!</p>
+        <div className='input-wrapper'><input type='text' placeholder='Search by ingredient or dish name' className='search-input'></input>
+          <button className='search-button' >Search</button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className='right-side-content'><img src='/assets/mainPicture.jpg' className='image'></img></div>
+    </div>
   )
 }
 
