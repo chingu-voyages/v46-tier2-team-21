@@ -4,6 +4,7 @@
 
 body {
   background-color: var(--BGCOLOR);
+  margin: 0;
 }
 
 
@@ -20,12 +21,16 @@ div.App {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 100px auto;
+  max-width: 1060px;
+  gap: 110px;
 }
 
 input.search-input {
   border: none;
   min-width: 20em;
 }
+
 
 div.input-wrapper {
   background-color: white;
@@ -53,6 +58,7 @@ h1#title {
   font-family: 'Limelight', sans-serif;
   letter-spacing: 1px;
   font-size: 6em;
+  margin-bottom: auto;
 
 }
 
@@ -64,8 +70,27 @@ p#landing_p {
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 2px;
+  margin: 56px 0;
 }
 
 img.image {
   width: 20em;
+  border: solid;
+  border-color: var(--PRIMARYCOLOR);
+  box-shadow: 10px 7px var(--PRIMARYCOLOR);
+  border-radius: 6px;
+  border-width: 2px;
+}
+
+div.tagline-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 64px;
+}
+
+p#tagline {
+  font-size: 3em;
+  font-weight: 500;
+  margin: 0;
 }

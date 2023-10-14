@@ -1,0 +1,20 @@
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    border-width: 1px;
+    padding: 0 132px;
+    border-top: none;
+}
+
+ul.nav-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 54px;
+}
+
+h3.logo {
+    font-family: 'Limelight', sans-serif;
+    letter-spacing: 1px;
+}
