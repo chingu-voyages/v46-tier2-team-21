@@ -24,3 +24,8 @@ button.search-button {
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+.search-button:hover {
+  background-color: var(--BLACK);
+  transition: 0.7s;
+}
