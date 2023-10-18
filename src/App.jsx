@@ -1,5 +1,6 @@
 
 import './App.css'
+import Search from './components/search/Search'
 import chefHat from './assets/chefhat.svg'
 
 function App() {
@@ -18,9 +19,7 @@ function App() {
         </div>
 
         <p id='landing_p'>Find recipes for the food you love and flavors you didn't know existed!</p>
-        <div className='input-wrapper'><input type='text' placeholder='Search by ingredient or dish name' className='search-input'></input>
-          <button className='search-button' >Search</button>
-        </div>
+        <Search />
       </div>
       <div className='right-side-content'><img src='/assets/mainPicture.jpg' className='image'></img></div>
     </div>
