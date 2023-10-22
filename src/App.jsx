@@ -1,9 +1,12 @@
-
+import { useState } from 'react'
 import './App.css'
 import Search from './components/search/Search'
 import chefHat from './assets/chefhat.svg'
 
 function App() {
+  const [searchResults, setSearchResults] = useState({data: {}, error: null, loading: false})
+
+  console.log(searchResults)
 
   return (
     <div className='App'>
@@ -19,7 +22,7 @@ function App() {
         </div>
 
         <p id='landing_p'>Find recipes for the food you love and flavors you didn't know existed!</p>
-        <Search />
+        <Search setSearchResults={setSearchResults}/>
       </div>
       <div className='right-side-content'><img src='/assets/mainPicture.jpg' className='image'></img></div>
     </div>
