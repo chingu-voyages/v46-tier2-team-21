@@ -26,33 +26,6 @@ div.App {
   gap: 110px;
 }
 
-input.search-input {
-  border: none;
-  min-width: 20em;
-}
-
-
-div.input-wrapper {
-  background-color: white;
-  width: 25em;
-  border-radius: 6px;
-  padding: 8px;
-  display: flex;
-  justify-content: space-evenly;
-  border: solid;
-  border-color: black;
-  box-shadow: 6px 4px black;
-}
-
-button.search-button {
-  background-color: var(--PRIMARYCOLOR);
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
 
 h1#title {
   font-family: 'Limelight', sans-serif;
