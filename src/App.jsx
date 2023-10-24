@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Search from './components/search/Search'
 import chefHat from './assets/chefhat.svg'
+import SearchBar from './components/searchbar/searchbar'
 
 function App() {
   const [searchResults, setSearchResults] = useState({data: {}, error: null, loading: false})
-
-  console.log(searchResults)
+  const searchedRecipes = searchResults.data.results
+  console.log({searchedRecipes})
+  console.log("loading?", searchResults.loading)
 
   return (
     <div className='App'>
@@ -22,9 +23,11 @@ function App() {
         </div>
 
         <p id='landing_p'>Find recipes for the food you love and flavors you didn't know existed!</p>
-        <Search setSearchResults={setSearchResults}/>
+
+        <SearchBar setSearchResults={setSearchResults}/>
       </div>
       <div className='right-side-content'><img src='/assets/mainPicture.jpg' className='image'></img></div>
+      <div> Hello cards here </div>
     </div>
   )
 }
