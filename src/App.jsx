@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SearchResults from './components/searchresults/searchresults'
 import './App.css'
 import chefHat from './assets/chefhat.svg'
 import SearchBar from './components/searchbar/searchbar'
@@ -6,10 +7,9 @@ import SearchBar from './components/searchbar/searchbar'
 function App() {
   const [searchResults, setSearchResults] = useState({data: {}, error: null, loading: false})
   const searchedRecipes = searchResults.data.results
-  console.log({searchedRecipes})
-  console.log("loading?", searchResults.loading)
 
   return (
+  <>
     <div className='App'>
       <div className='left-side-content'>
         <h1 id='title'>Recipe Box</h1>
@@ -27,8 +27,10 @@ function App() {
         <SearchBar setSearchResults={setSearchResults}/>
       </div>
       <div className='right-side-content'><img src='/assets/mainPicture.jpg' className='image'></img></div>
-      <div> Hello cards here </div>
     </div>
+    
+    { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
+  </>
   )
 }
 

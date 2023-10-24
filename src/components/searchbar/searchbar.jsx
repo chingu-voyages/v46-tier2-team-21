@@ -28,14 +28,14 @@ const SearchBar = ({ setSearchResults }) => {
             const results = await response.json()
             setSearchResults(prev => ({...prev, data: results, loading: false}))
         } catch (error) {
-            setSearchResults(prev => ({...prev, error: error, loading: false}))
+            setSearchResults({data: {}, error: error, loading: false})
             console.error(error)
         }
     }
 
     return (
         <div className='input-wrapper'>
-            <form onSubmit={getRecipes}>
+            <form onSubmit={getRecipes} id='search-form'>
                 <input onChange={updateInput} type='text' placeholder='Search by ingredient or dish name' className='search-input' />
                 <button className='search-button' >Search</button>
             </form>
