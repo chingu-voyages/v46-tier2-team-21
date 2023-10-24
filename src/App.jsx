@@ -30,6 +30,9 @@ function App() {
     </div>
     
     { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
+    {/* we can also style the following */}
+    { searchResults.loading && <p>finding recipes...</p> }
+    { searchResults.error && <p>Could not search, please try again</p> }
   </>
   )
 }
