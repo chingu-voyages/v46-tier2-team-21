@@ -8,7 +8,7 @@ function Home() {
 
     const [searchResults, setSearchResults] = useState({data: {}, error: null, loading: false})
     const searchedRecipes = searchResults.data.results
-    
+
   return (
     <>
     <div className='App'>
@@ -31,7 +31,9 @@ function Home() {
     </div>
     
     { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
+    
     {/* we can also style the following */}
+
     { searchResults.loading && <p>finding recipes...</p> }
     { searchResults.error && <p>Could not search, please try again</p> }
   </>
