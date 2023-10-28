@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/home/home'
 import ExploreRecipe from './components/explore/exploreRecipe';
+import RecipeDetails from './components/recipedetails/recipeDetails';
 // import SearchResults from './components/searchresults/searchresults'
 // import chefHat from './assets/chefhat.svg'
 // import SearchBar from './components/searchbar/searchbar'
@@ -14,8 +15,9 @@ function App() {
 
   return (
     <>
-      
+
     </>
+    
   )
 }
 
