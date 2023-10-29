@@ -1,11 +1,18 @@
 import React,{useState} from 'react'
 import SearchBar from '../searchbar/searchbar'
 import SearchResults from '../searchresults/searchresults'
+import { useLocation } from 'react-router-dom'
 
 function ExploreRecipe() {
 
     const [searchResults, setSearchResults] = useState({data: {}, error: null, loading: false})
-    const searchedRecipes = searchResults.data.results
+    let searchedRecipes = searchResults.data.results
+    const location = useLocation();
+
+    if(!searchedRecipes){  
+        
+        searchedRecipes = location.state.searchedRecipes;
+    }
 
   return (
     <>

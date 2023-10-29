@@ -15,7 +15,13 @@ function App() {
 
   return (
     <>
-
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/explore" element={<ExploreRecipe/>} />
+          <Route path="/recipedetails" element={<RecipeDetails/>} />
+        </Routes>
+      </BrowserRouter>
     </>
     
   )
