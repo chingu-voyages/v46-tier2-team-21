@@ -1,6 +1,8 @@
 import React from 'react'
 import { useLocation } from "react-router-dom";
 
+// this page needs to be designed
+
 function RecipeDetails() {
     const location = useLocation();
     const {recipeData} = location.state;

@@ -9,7 +9,6 @@ function Home() {
     const navigate = useNavigate();
     const [searchResults, setSearchResults] = useState({data: {}, error: null, loading: false})
     const searchedRecipes = searchResults.data.results
-    const totalCount = searchResults.data.count
 
   return (
     <>
@@ -32,7 +31,7 @@ function Home() {
       <div className='right-side-content'><img src='/assets/mainPicture.jpg' className='image'></img></div>
     </div>
     
-    { searchedRecipes && navigate("/explore", {state: {count: totalCount, searchedRecipes: searchedRecipes}}) }
+    { searchedRecipes && navigate("/explore", {state: { searchedRecipes: searchedRecipes}}) }
     
     {/* we can also style the following */}
 
