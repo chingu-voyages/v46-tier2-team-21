@@ -14,6 +14,11 @@ ul.nav-ul {
     gap: 54px;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 h3.logo {
     font-family: 'Limelight', sans-serif;
     letter-spacing: 1px;
