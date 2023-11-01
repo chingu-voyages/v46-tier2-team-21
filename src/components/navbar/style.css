@@ -19,6 +19,10 @@ ul.nav-ul {
     color: inherit;
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+}
+
 h3.logo {
     font-family: 'Limelight', sans-serif;
     letter-spacing: 1px;
