@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './style.css'
 
 const Navbar = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
             <h3 className='logo'>Recipe Box</h3>
             <ul className='nav-ul'>
 
-                <li className='nav-li'>Home</li>
+                <li className='nav-li'><Link className='nav-link' to='/'>Home</Link></li>
                 <li className='nav-li'>Saved List</li>
             </ul>
         </nav>
