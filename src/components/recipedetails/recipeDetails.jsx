@@ -15,21 +15,38 @@ function RecipeDetails() {
         <p>{recipeData.description}</p>
         <div className='seperator'></div>
 
-        <h3> Instruction: </h3>
-        {
-          recipeData.instructions.map(instruction => {
-            return (
-              <ul>
-                {/* <p> Start Time: {instruction.start_time}</p>
-              <p> End Time: {instruction.end_time}</p> */}
-                <li> {instruction.display_text} </li>
+        <div className='details' id='ingredients-div'>
+          <h3 className='detail-title'> Ingredients </h3>
+        </div>
 
-              </ul>
 
-            );
-          })
-        }
+        <div className='details' id='instructions-div'>
+          <h3 className='detail-title'> Instructions </h3>
+          {
+            recipeData.instructions.map(instruction => {
+              return (
+                <ul className='instruction-list'>
+                  <li className='dynamic-li'> {instruction.display_text} </li>
+                </ul>
+              );
+            })
+          }
+        </div>
+
+
+        <div className='details' id='nutrition-div'>
+          <h3 className='detail-title'> Nutrition </h3>
+          <ul className='nutrition-list'>
+            <li>Calories: {recipeData.nutrition.calories}</li>
+            <li>Carbohydrates: {recipeData.nutrition.carbohydrates} </li>
+            <li>Fat: {recipeData.nutrition.fat}</li>
+            <li>Fiber: {recipeData.nutrition.fiber}</li>
+            <li>Protein: {recipeData.nutrition.protein}</li>
+            <li>Sugar: {recipeData.nutrition.sugar}</li>
+          </ul>
+        </div>
       </section>
+
       <section className='image-section'>
         <img id='detail-image' src={recipeData.thumbnail_url} alt="" />
       </section>
