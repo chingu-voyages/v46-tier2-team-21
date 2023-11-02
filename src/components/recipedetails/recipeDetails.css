@@ -1,0 +1,7 @@
+div.detail-display {
+    display: flex;
+}
+
+img#detail-image {
+    width: 32em;
+}

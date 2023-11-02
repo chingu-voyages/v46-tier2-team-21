@@ -67,3 +67,9 @@ p#tagline {
   font-weight: 500;
   margin: 0;
 }
+
+div.explore-input {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 108px;
+}

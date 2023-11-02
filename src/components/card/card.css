@@ -5,7 +5,6 @@
   width: 20rem;
   border: 1px solid;
   border-radius: 10px;
-  box-shadow: 10px 7px var(--BLACK);
   background-color: white;
   overflow: hidden;
 }
@@ -30,6 +29,7 @@
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0;
+  line-height: 28px;
 }
 
 .recipe-description {
@@ -52,4 +52,10 @@
 
 .details-btn:hover {
   text-decoration: underline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  line-height: 20px;
 }
