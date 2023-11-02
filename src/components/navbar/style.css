@@ -1,17 +1,29 @@
 nav.navbar {
-    display: flex;
-    justify-content: space-between;
     border: solid;
     border-width: 1px;
-    padding: 0 132px;
     border-top: none;
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 4rem;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
 }
 
 ul.nav-ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    gap: 54px;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
@@ -25,5 +37,37 @@ ul.nav-ul {
 
 h3.logo {
     font-family: 'Limelight', sans-serif;
+    font-size: 1.2rem;
     letter-spacing: 1px;
+    margin: 0;
+}
+
+@media (min-width: 481px) {
+    nav.navbar {
+        padding: 0 32px;
+    }
+    
+    ul.nav-ul {
+        gap: 32px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav.navbar {
+        padding: 0 70px;
+    }
+
+    h3.logo {
+        font-size: 1.5rem;
+    }
+
+    ul.nav-ul {
+        gap: 54px;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav.navbar {
+        padding: 0 132px;
+    }
 }

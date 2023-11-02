@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react';
 import SearchBar from '../searchbar/searchbar';
 import chefHat from '../../assets/chefhat.svg';
 import { useNavigate } from 'react-router-dom';
+import './home.css';
 
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
 
   return (
     <>
-    <div className='App'>
+    <div className='landing-container'>
       <div className='left-side-content'>
         <h1 id='title'>Recipe Box</h1>
 
