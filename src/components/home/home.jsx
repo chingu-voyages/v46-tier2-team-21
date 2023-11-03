@@ -35,7 +35,7 @@ function Home() {
 
         <SearchBar setSearchResults={setSearchResults}/>
       </div>
-      <div className='right-side-content'><img src='/assets/mainPicture.jpg' className='image'></img></div>
+      <div className='right-side-content'><img src='./assets/mainPicture.jpg' className='image'></img></div>
     </div>
         
     {/* we can also style the following */}
