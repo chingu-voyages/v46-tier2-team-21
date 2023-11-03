@@ -59,10 +59,6 @@ p#tagline {
   width: 7vw;
 }
 
-@media (min-width: 481px) {
-  
-}
-
 @media (min-width: 769px) {
   div.landing-container {
     margin: 64px auto;
