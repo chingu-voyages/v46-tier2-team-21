@@ -7,21 +7,12 @@ body {
   margin: 0;
 }
 
-
 :root {
   --LIGHTGRAY: #F2F2F2;
   --BLACK: black;
   --BGCOLOR: #E7DCD0;
   --PRIMARYCOLOR: #F21D2F;
   --WHITE: white;
-
-}
-
-h1#title {
-  font-family: 'Limelight', sans-serif;
-  letter-spacing: 1px;
-  font-size: 6em;
-  margin-bottom: auto;
 
 }
 

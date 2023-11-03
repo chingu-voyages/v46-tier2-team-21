@@ -2,20 +2,38 @@ div.landing-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px auto;
+  margin: 32px auto;
   max-width: 1060px;
-  gap: 110px;
+  gap: 32px;
+  padding: 0 12px;
+  flex-wrap: wrap;
+}
+
+div.left-side-content {
+  max-width: 100%;
+}
+
+div.right-side-content {
+  text-align: center;
+}
+
+h1#title {
+  font-family: 'Limelight', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14vw;
+  margin: 0;
 }
 
 p#landing_p {
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 2px;
-  margin: 56px 0;
+  margin: 32px 0;
+  max-width: 80%;
 }
 
 img.image {
-  width: 20em;
+  width: 80%;
   border: solid;
   border-color: var(--PRIMARYCOLOR);
   box-shadow: 10px 7px var(--PRIMARYCOLOR);
@@ -25,13 +43,110 @@ img.image {
 
 div.tagline-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: left;
+  gap: 4vw;
   max-height: 64px;
+  margin-top: 1rem;
 }
 
 p#tagline {
-  font-size: 3em;
+  font-size: 7vw;
   font-weight: 500;
   margin: 0;
+}
+
+#tagline-img {
+  width: 7vw;
+}
+
+@media (min-width: 481px) {
+  
+}
+
+@media (min-width: 769px) {
+  div.landing-container {
+    margin: 64px auto;
+    padding: 0 18px;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+ 
+  div.left-side-content {
+    max-width: 575px;
+  }
+
+  h1#title {
+    font-family: 'Limelight', sans-serif;
+    letter-spacing: 1px;
+    font-size: 4rem;
+  }
+
+  div.tagline-wrapper {
+    gap: 24px;
+  }
+
+  p#tagline {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  #tagline-img {
+    width: 2rem;
+  }
+
+  p#landing_p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 56px 0;
+    max-width: 100%;
+  }
+
+  img.image {
+    width: 16em;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  div.landing-container {
+    margin: 100px auto;
+    gap: 42px;
+  }
+
+  div.left-side-content {
+    max-width: 670px;
+  }
+
+  h1#title {
+    font-size: 6rem;
+  }
+
+  p#tagline {
+    font-size: 3em;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  #tagline-img {
+    width: 48px;
+  }
+
+  p#landing_p {
+    max-width: 80%;
+  }
+
+  img.image {
+    width: 20em;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.landing-container {
+    gap: 110px;
+  }
+
+  div.tagline-wrapper {
+    gap: 32px;
+  }
 }

@@ -23,7 +23,7 @@ ul.nav-ul {
     justify-content: space-between;
     gap: 16px;
     margin: 0;
-    padding: 0;
+    padding-left: 8px;
 }
 
 .nav-link {
@@ -46,7 +46,7 @@ h3.logo {
     nav.navbar {
         padding: 0 32px;
     }
-    
+
     ul.nav-ul {
         gap: 32px;
     }
