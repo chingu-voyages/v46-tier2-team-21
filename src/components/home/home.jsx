@@ -1,5 +1,6 @@
-import React,{useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import SearchBar from '../searchbar/searchbar';
+import Loader from '../Loader/loader';
 import chefHat from '../../assets/chefhat.svg';
 import { useNavigate } from 'react-router-dom';
 
@@ -39,7 +40,7 @@ function Home() {
         
     {/* we can also style the following */}
 
-    { searchResults.loading && <p>finding recipes...</p> }
+    { searchResults.loading && <Loader />}
     { searchResults.error && <p>Could not search, please try again</p> }
   </>
   )
