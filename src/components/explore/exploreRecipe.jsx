@@ -3,6 +3,7 @@ import SearchBar from '../searchbar/searchbar'
 import SearchResults from '../searchresults/searchresults'
 import Loader from '../Loader/loader'
 import { useLocation } from 'react-router-dom'
+import './exploreRecipe.css'
 
 function ExploreRecipe() {
 
@@ -15,17 +16,17 @@ function ExploreRecipe() {
     }
 
   return (
-    <>
-    <div className="results-searchbar">
-        <SearchBar setSearchResults={setSearchResults}/>  
+    <div className="results-page-container">
+      <div className="results-searchbar">
+          <SearchBar setSearchResults={setSearchResults}/>  
+      </div>
+          
+      { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
+      {/* we can also style the following */}
+      { searchResults.loading && <Loader /> }
+      { searchResults.error && <p>Could not search, please try again</p> }
+          
     </div>
-        
-    { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
-    {/* we can also style the following */}
-    { searchResults.loading && <Loader /> }
-    { searchResults.error && <p>Could not search, please try again</p> }
-        
-    </>
   )
 }
 

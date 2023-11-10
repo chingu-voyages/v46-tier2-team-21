@@ -9,7 +9,8 @@ input.search-input:focus {
 
 div.input-wrapper {
     background-color: white;
-    max-width: 25em;
+    width: 25em;
+    max-width: 100%;
     border-radius: 6px;
     padding: 8px 24px;
     display: flex;
