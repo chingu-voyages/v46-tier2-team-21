@@ -1,16 +1,16 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
-import './style.css'
+import './navbar.css'
 
 const Navbar = () => {
     return (
         <nav className='navbar'>
-            <h3 className='logo'>Recipe Box</h3>
-            <ul className='nav-ul'>
-
-                <li className='nav-li'><Link className='nav-link' to='/'>Home</Link></li>
-                <li className='nav-li'>Saved List</li>
-            </ul>
+            <div className='nav-items'>
+                <h3 className='logo'>Recipe Box</h3>
+                <ul className='nav-ul'>
+                    <li className='nav-li'><Link className='nav-link' to='/'>Home</Link></li>
+                    <li className='nav-li'>Saved List</li>
+                </ul>
+            </div>
         </nav>
     )
 }

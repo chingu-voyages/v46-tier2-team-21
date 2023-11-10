@@ -1,23 +1,30 @@
 input.search-input {
     border-style: none;
-    min-width: 20em;
+    flex: 1
 }
 
 input.search-input:focus {
     outline: none;
 }
 
-
 div.input-wrapper {
     background-color: white;
-    width: 25em;
+    max-width: 25em;
     border-radius: 6px;
-    padding: 8px;
+    padding: 8px 24px;
     display: flex;
     justify-content: space-evenly;
     border: solid;
     border-color: black;
     box-shadow: 6px 4px black;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#search-form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 button.search-button {
@@ -41,4 +48,10 @@ button.search-button:hover {
     letter-spacing: 1px;
     cursor: pointer;
 
+}
+
+@media (min-width: 769px) {
+    div.input-wrapper {
+        margin: 0;
+    }
 }
