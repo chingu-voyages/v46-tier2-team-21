@@ -1,15 +1,6 @@
 # Recipe Box
 
 
-
-<style>
-
-    #tableOfContents {
-        font-size: 1.5em;
-    }
-
-</style>
-
 <p>
 <details>
 <summary id="tableOfContents">Table of Contents</summary>
