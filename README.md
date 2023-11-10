@@ -1,33 +1,25 @@
 # Recipe Box
 
-
-
-<style>
-
-    #tableOfContents {
-        font-size: 1.5em;
-    }
-
-</style>
-
+<!-- 
 <p>
-<details>
-<summary id="tableOfContents">Table of Contents</summary>
-
+<details> 
+<summary id="tableOfContents">Table of Contents</summary> -->
+<!-- ## Table of Contents -->
+- [Deployment](#deployment)
 - [Overview](#overview)
 - [Features](#features)
 - [Running This Project Locally](#running-the-project)
 - [Tools and technologies](#tools-and-technologies)
 - [Development Team](#development-team)
 
-</details>
-</p>
+<!-- </details>
+</p> -->
 
 ![Recipe Box Logo](./docs/RecipeBoxHome.jpg)
 
 
-## Live Site
-Check out [Recipe Box](https://chingurecipebox.netlify.app/) at https://chingurecipebox.netlify.app/
+## Deployment
+Check out the live version of [Recipe Box](https://chingurecipebox.netlify.app/) at https://chingurecipebox.netlify.app/
 
 ## Overview
 
@@ -64,7 +56,8 @@ For those interested in running the project locally
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Tasty - RapidAPI](https://rapidapi.com/apidojo/api/tasty)
 * [React Router v6.17](https://reactrouter.com/en/main)
-* [Figma](https://www.figma.com/)
+* [Figma](https://www.figma.com/) Design tool
+* [Asana](https://asana.com/) Team project management tool
 
 ## Development Team
 
@@ -74,6 +67,9 @@ For those interested in running the project locally
 
 [**Greg Schoenberg**](https://github.com/GregNicholas)
 
+## Chingu Voyage Guide 
+
+[**Christopher Conway**](https://github.com/ConwayCJ)
 
 ## Ways to Contribute
 
