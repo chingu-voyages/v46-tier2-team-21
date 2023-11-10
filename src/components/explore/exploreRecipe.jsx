@@ -1,6 +1,7 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import SearchBar from '../searchbar/searchbar'
 import SearchResults from '../searchresults/searchresults'
+import Loader from '../Loader/loader'
 import { useLocation } from 'react-router-dom'
 
 function ExploreRecipe() {
@@ -10,19 +11,18 @@ function ExploreRecipe() {
     const location = useLocation();
 
     if(!searchedRecipes){  
-        
         searchedRecipes = location.state.searchedRecipes;
     }
 
   return (
     <>
-    <div style={{margin:'10px', padding:'10px'}}>
+    <div className="results-searchbar">
         <SearchBar setSearchResults={setSearchResults}/>  
     </div>
         
     { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
     {/* we can also style the following */}
-    { searchResults.loading && <p>finding recipes...</p> }
+    { searchResults.loading && <Loader /> }
     { searchResults.error && <p>Could not search, please try again</p> }
         
     </>
