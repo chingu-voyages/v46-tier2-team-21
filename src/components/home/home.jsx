@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import SearchBar from '../searchbar/searchbar';
-import Loader from '../Loader/loader';
+import Loader from '../loader/loader';
 import chefHat from '../../assets/chefhat.svg';
 import { useNavigate } from 'react-router-dom';
 import './home.css';

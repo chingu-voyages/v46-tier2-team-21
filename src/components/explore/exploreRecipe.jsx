@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import SearchBar from '../searchbar/searchbar'
 import SearchResults from '../searchresults/searchresults'
-import Loader from '../Loader/loader'
+import Loader from '../loader/loader'
 import { useLocation } from 'react-router-dom'
 import './exploreRecipe.css'
 
