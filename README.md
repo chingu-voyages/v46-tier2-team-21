@@ -80,7 +80,7 @@ For bug reports and feature requests, we use GitHub Issues. Feel free to submit 
 
 
 
-# Learning Resources
+## Learning Resources
 
 - [MDN javascript documentation](https://)
 - [Node JavaScript Reference](https://nodejs.dev/en/learn/how-much-javascript-do-you-need-to-know-to-use-nodejs) 
