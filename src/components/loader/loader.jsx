@@ -1,4 +1,4 @@
-import chefHat from '../../assets/chefhat.svg'
+import chefHat from '/assets/chefhat.svg'
 import './loader.css'
 
 export default function Loader() {

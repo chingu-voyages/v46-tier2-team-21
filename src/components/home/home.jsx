@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import SearchBar from '../searchbar/searchbar';
-import Loader from '../loader/loader';
-import chefHat from '../../assets/chefhat.svg';
+import Loader from '../loader/loader'
+import chefHat from '/assets/chefhat.svg';
 import { useNavigate } from 'react-router-dom';
 import './home.css';
 
@@ -36,7 +36,7 @@ function Home() {
 
         <SearchBar setSearchResults={setSearchResults}/>
       </div>
-      <div className='right-side-content'><img src='./assets/mainPicture.jpg' className='image'></img></div>
+      <div className='right-side-content'><img src='/assets/mainPicture.jpg' className='image'></img></div>
     </div>
         
     {/* we can also style the following */}
