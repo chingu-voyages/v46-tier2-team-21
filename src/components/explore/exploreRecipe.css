@@ -1,5 +1,5 @@
 .results-page-container {
-  padding: 0 16px;
+  padding: 16px;
 }
 
 .results-searchbar {
@@ -7,6 +7,11 @@
   max-width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.display-message {
+  font-size: 1.4rem;
+  margin: 0 0 1.5rem 0;
 }
 
 @media (min-width: 769px) {
