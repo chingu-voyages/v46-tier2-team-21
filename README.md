@@ -55,7 +55,8 @@ For those interested in running the project locally
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Tasty - RapidAPI](https://rapidapi.com/apidojo/api/tasty)
 * [React Router v6.17](https://reactrouter.com/en/main)
-* [Figma](https://www.figma.com/)
+* [Figma](https://www.figma.com/) Design tool
+* [Asana](https://asana.com/) Team project management tool
 
 ## Development Team
 
@@ -73,9 +74,30 @@ For bug reports and feature requests, we use GitHub Issues. Feel free to submit 
 [GitHub Issues](https://github.com/chingu-voyages/v46-tier2-team-21/issues)
 
 
+## Development Team
+
+[**Moriah Walker**](https://github.com/MoriahSWalker)
 
 
-# Learning Resources
+[**Akashay Anand**](https://github.com/Akashay-Anand)
+
+
+[**Greg Schoenberg**](https://github.com/GregNicholas)
+
+## Chingu Voyage Guide 
+
+[**Christopher Conway**](https://github.com/ConwayCJ)
+
+## Ways to Contribute
+
+For bug reports and feature requests, we use GitHub Issues. Feel free to submit your ideas or report issues:
+
+[GitHub Issues](https://github.com/chingu-voyages/v46-tier2-team-21/issues)
+
+
+
+
+## Learning Resources
 
 - [MDN javascript documentation](https://)
 - [Node JavaScript Reference](https://nodejs.dev/en/learn/how-much-javascript-do-you-need-to-know-to-use-nodejs) 
