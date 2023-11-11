@@ -1,25 +1,24 @@
 # Recipe Box
 
-<!-- 
+
 <p>
-<details> 
-<summary id="tableOfContents">Table of Contents</summary> -->
-<!-- ## Table of Contents -->
-- [Deployment](#deployment)
+<details>
+<summary id="tableOfContents">Table of Contents</summary>
+
 - [Overview](#overview)
 - [Features](#features)
 - [Running This Project Locally](#running-the-project)
 - [Tools and technologies](#tools-and-technologies)
 - [Development Team](#development-team)
 
-<!-- </details>
-</p> -->
+</details>
+</p>
 
 ![Recipe Box Logo](./docs/RecipeBoxHome.jpg)
 
 
-## Deployment
-Check out the live version of [Recipe Box](https://chingurecipebox.netlify.app/) at https://chingurecipebox.netlify.app/
+## Live Site
+Check out [Recipe Box](https://chingurecipebox.netlify.app/) at https://chingurecipebox.netlify.app/
 
 ## Overview
 
@@ -64,6 +63,24 @@ For those interested in running the project locally
 [**Moriah Walker**](https://github.com/MoriahSWalker)
 
 [**Akashay Anand**](https://github.com/Akashay-Anand)
+
+[**Greg Schoenberg**](https://github.com/GregNicholas)
+
+
+## Ways to Contribute
+
+For bug reports and feature requests, we use GitHub Issues. Feel free to submit your ideas or report issues:
+
+[GitHub Issues](https://github.com/chingu-voyages/v46-tier2-team-21/issues)
+
+
+## Development Team
+
+[**Moriah Walker**](https://github.com/MoriahSWalker)
+
+
+[**Akashay Anand**](https://github.com/Akashay-Anand)
+
 
 [**Greg Schoenberg**](https://github.com/GregNicholas)
 
