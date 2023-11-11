@@ -4,8 +4,8 @@ import React,{useEffect, useState, useContext} from 'react';
 import { RecipeContext } from '../context/savedContext';
 
 const Card = ({ recipeData }) => {
-    // const [isSaved, setIsSaved] = useState(false);
 
+    // access context variable
     const { savedRecipe, setSavedRecipe } = useContext(RecipeContext);
 
     //manageSaveState  // Immediately invocked function expression
@@ -29,13 +29,14 @@ const Card = ({ recipeData }) => {
         }
 
         recipeData.isSaved = !isCurrentlySaved;
+        
+        // update data into context variable
         setSavedRecipe(updatedRecipes);
-        
-        // updateStorage(); // error with this getting delayed not correct behaviour
 
+        // store the updated list in localStorage 
         localStorage.setItem('savedRecipe', JSON.stringify(updatedRecipes));
-        
     }
+
     
     return (
         <div className='recipe-card'>

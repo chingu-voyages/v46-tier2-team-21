@@ -6,25 +6,24 @@ import { RecipeContext } from '../context/savedContext';
 function Savedresults() {
   
   const { savedRecipe,fetchRecipe } = useContext(RecipeContext);
-    useEffect(() => {
-      fetchRecipe();
-    },[])
   
-  const searchedRecipes = Object.values(savedRecipe);
+  useEffect(() => {
+    fetchRecipe();
+  },[])
+  
 
-  console.log(searchedRecipes)
+  //retrieve the recipe list in array format from object
+  const searchedRecipes = Object.values(savedRecipe);
 
   return (
     <>
-        
-    <div style={{ marginTop: '20px'}}>
-    { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
-    {/* we can also style the following */}
-    { searchedRecipes.length === 0 ? ( <h2 style={{ textAlign: 'center', fontSize: '24px', color:'blue' }}>Empty list</h2> ):"" }
+      <div style={{ marginTop: '20px'}}>
 
-    </div>
+        { searchedRecipes.length === 0 ? ( <h2 style={{ textAlign: 'center', fontSize: '24px', color:'blue' }}>Empty list</h2> ):"" }
 
-        
+        { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
+
+      </div>
     </>
   )
 }

@@ -5,8 +5,7 @@ import Home from './components/home/home'
 import ExploreRecipe from './components/explore/exploreRecipe';
 import RecipeDetails from './components/recipedetails/recipeDetails';
 import Savedresults from './components/saveList/savedresults';
-
-import { RecipeProvider, RecipeContext } from './components/context/savedContext';
+import { RecipeProvider } from './components/context/savedContext';
 
 
 function App() {

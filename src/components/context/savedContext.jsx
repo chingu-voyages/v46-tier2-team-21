@@ -6,8 +6,8 @@ const RecipeContext = createContext();
 
 
 const RecipeProvider = ({ children }) => {
-  // Define the state for the theme
-  // const [theme, setTheme] = useState('light');
+  
+  // sate variable to store data
   const [savedRecipe, setSavedRecipe] = useState({});
   
 
