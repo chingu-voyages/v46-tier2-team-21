@@ -1,4 +1,5 @@
 .recipe-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 25.75rem;
@@ -33,42 +34,54 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  height: 9.125rem;
+  overflow: hidden; 
 }
 
 .recipe-title {
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0;
+  line-height: 28px;
+  margin-bottom: 5px; 
 }
 
 .recipe-description {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0 0;  
   overflow: hidden;
 }
 
+.card-btn {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 1px; 
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+  height: 30px;
+  background-color: #987676; 
+  padding: 10px; 
+  margin-left: -34px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  /* box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0px -50px 10px linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%); */
+}
+
+.details-btn,
+.save-btn {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+}
+  
 .details-btn {
-  width: fit-content;
+  background-color: #3498db;
+  color: white;
   border: none;
-  background: none;
   cursor: pointer;
-  padding: 0;
-  /* transform: translateY(8px); */
-  color: blue;
-  font-weight: 600;
-  position: absolute;
-  bottom: 5px;
 }
-
-.details-btn:hover {
-  text-decoration: underline;
-}
-
-.save-btn{
-  position: absolute;
-  width: fit-content;
-  bottom: 5px;
-  right: 5px;
-  margin-left: auto;
+  
+.save-btn {
+  background-color: #fad7d3;
+  border: none;
   cursor: pointer;
 }

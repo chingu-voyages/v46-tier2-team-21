@@ -28,6 +28,9 @@ function ExploreRecipe() {
           
       <p className="display-message">{displayMessage}</p>
 
+      <hr size="3" width="50%"></hr>
+      <br/>
+
       { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
       {/* we can also style the following */}
       { searchResults.loading && <Loader /> }
