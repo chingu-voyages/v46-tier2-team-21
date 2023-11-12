@@ -43,7 +43,7 @@ const Card = ({ recipeData }) => {
             <section className='card-info'>
                 <div className='card-text'>
                     <h3 className='recipe-title'>{recipeData.name}</h3>
-                    <p className='recipe-description' >{recipeData.description.slice(0, 120)}...</p>
+                    <p className='recipe-description' >{ recipeData.description && recipeData.description.slice(0, 120)}...</p>
                 </div>
                 <div className='card-btn'>
                     <Link to="/recipedetails" state={ {recipeData:recipeData} }>
