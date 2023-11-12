@@ -1,0 +1,21 @@
+.results-page-container {
+  padding: 16px;
+}
+
+.results-searchbar {
+  margin: 3.5rem 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.display-message {
+  font-size: 1.4rem;
+  margin: 0 0 1.5rem 0;
+}
+
+@media (min-width: 769px) {
+  .results-searchbar {
+    margin: 3.5rem 0;
+  }
+}
