@@ -1,0 +1,39 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  background: rgba(0, 0, 0, 0.834);
+  z-index: 1;
+}
+
+.loader-container p {
+  color: var(--BGCOLOR);
+  font-size: 2rem;
+}
+
+.icon {
+  animation: pulse 1.2s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+  transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icon img {
+  filter: invert(99%) sepia(7%) saturate(1853%) hue-rotate(304deg) brightness(98%) contrast(85%);
+}

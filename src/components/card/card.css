@@ -10,6 +10,16 @@
   overflow: hidden;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 200ms linear;
+}
+
+.card-link:hover {
+  transform: scale(102%);
+}
+
 .recipe-card img {
   width: 100%;
   height: 13.625rem;
@@ -52,4 +62,13 @@
 
 .details-btn:hover {
   text-decoration: underline;
+}
+
+.save-btn{
+  position: absolute;
+  width: fit-content;
+  bottom: 5px;
+  right: 5px;
+  margin-left: auto;
+  cursor: pointer;
 }
