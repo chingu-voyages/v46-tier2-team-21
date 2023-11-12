@@ -1,13 +1,10 @@
-import React from 'react'
 import { useLocation } from "react-router-dom";
 import "./recipeDetails.css"
-
-// this page needs to be designed
 
 function RecipeDetails() {
   const location = useLocation();
   const { recipeData } = location.state;
-  console.log(recipeData);
+
   return (
     <div className='detail-display'>
       <section className='text-section'>
@@ -22,15 +19,15 @@ function RecipeDetails() {
 
         <div className='details' id='instructions-div'>
           <h3 className='detail-title'> Instructions </h3>
+          <ol className='instruction-list'>
           {
             recipeData.instructions.map(instruction => {
               return (
-                <ul className='instruction-list'>
-                  <li className='dynamic-li'> {instruction.display_text} </li>
-                </ul>
+                  <li key={instruction.id} className='dynamic-li'> {instruction.display_text} </li>
               );
             })
           }
+          </ol>
         </div>
 
 
