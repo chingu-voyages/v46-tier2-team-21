@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import SearchBar from '../searchbar/searchbar'
 import SearchResults from '../searchresults/searchresults'
 import Loader from '../loader/loader'
@@ -6,7 +6,6 @@ import { useLocation } from 'react-router-dom'
 import './exploreRecipe.css'
 
 function ExploreRecipe() {
-
     const [searchResults, setSearchResults] = useState({data: {}, error: null, loading: false})
     let searchedRecipes = searchResults.data.results
     const location = useLocation();
@@ -32,7 +31,6 @@ function ExploreRecipe() {
       <br/>
 
       { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
-      {/* we can also style the following */}
       { searchResults.loading && <Loader /> }
       { searchResults.error && <p>Could not search, please try again</p> }
           
