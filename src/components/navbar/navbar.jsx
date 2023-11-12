@@ -8,7 +8,7 @@ const Navbar = () => {
                 <h3 className='logo'>Recipe Box</h3>
                 <ul className='nav-ul'>
                     <li className='nav-li'><Link className='nav-link' to='/'>Home</Link></li>
-                    <li className='nav-li'>Saved List</li>
+                    <li className='nav-li'><Link className='nav-link' to='/saved-list'>Saved List</Link></li>
                 </ul>
             </div>
         </nav>

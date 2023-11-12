@@ -63,3 +63,12 @@
 .details-btn:hover {
   text-decoration: underline;
 }
+
+.save-btn{
+  position: absolute;
+  width: fit-content;
+  bottom: 5px;
+  right: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
