@@ -1,0 +1,82 @@
+div.detail-display {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+    margin: 32px;
+}
+
+img#detail-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+div.seperator {
+    border: black;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+section.text-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    flex: 1 1 48%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+section.image-section {
+    flex: 1 1 48%;
+    box-sizing: border-box;
+}
+
+div.details {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+h3.detail-title {
+    margin: 0;
+}
+
+.nutrition-list {
+    list-style: none;
+    padding-left: 24px;
+} 
+
+.instruction-list {
+    padding-left: 24px;
+}
+
+.instruction-list li {
+    margin-bottom: 16px;
+}
+
+@media (min-width: 769px) {
+    div.detail-display {
+        flex-direction: row;
+    }
+
+    section.text-section {
+        padding: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    div.detail-display {
+        height: 40em;
+        margin: 100px;
+    }
+
+    section.text-section {
+        padding: 36px;
+    }
+
+    img#detail-image {
+        height: 100%;
+    }
+}

@@ -4,7 +4,6 @@ import {useEffect, useState, useContext} from 'react';
 import { RecipeContext } from '../context/savedContext';
 
 const Card = ({ recipeData }) => {
-
     // access context variable
     const { savedRecipe, setSavedRecipe } = useContext(RecipeContext);
 
