@@ -7,7 +7,6 @@ body {
   margin: 0;
 }
 
-
 :root {
   --LIGHTGRAY: #F2F2F2;
   --BLACK: black;
@@ -17,59 +16,6 @@ body {
 
 }
 
-div.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 100px auto;
-  max-width: 1060px;
-  gap: 110px;
-}
-
-
-h1#title {
-  font-family: 'Limelight', sans-serif;
-  letter-spacing: 1px;
-  font-size: 6em;
-  margin-bottom: auto;
-
-}
-
 span#light_text {
   font-weight: 300;
-}
-
-p#landing_p {
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  margin: 56px 0;
-}
-
-img.image {
-  width: 20em;
-  border: solid;
-  border-color: var(--PRIMARYCOLOR);
-  box-shadow: 10px 7px var(--PRIMARYCOLOR);
-  border-radius: 6px;
-  border-width: 2px;
-}
-
-div.tagline-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-height: 64px;
-}
-
-p#tagline {
-  font-size: 3em;
-  font-weight: 500;
-  margin: 0;
-}
-
-div.explore-input {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0 108px;
 }
