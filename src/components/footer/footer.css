@@ -11,15 +11,27 @@
 
 .footer-items {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: auto;
   height: 100%;
 }
 
+.footer-message {
+  display: flex;
+  align-items: end;
+  font-size: 1rem;
+}
+
+#footer-img {
+  width: 1.5rem;
+  margin-right: 5px;
+}
 
 .footer-link {
+  display: flex;
+  align-items: end;
+  margin-left: .5rem;
   text-decoration: none;
   color: inherit;
 }
