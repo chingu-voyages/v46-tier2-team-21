@@ -27,6 +27,9 @@ function ExploreRecipe() {
           
       <p className="display-message">{displayMessage}</p>
 
+      <hr size="3" width="50%"></hr>
+      <br/>
+
       { searchedRecipes && <SearchResults searchedRecipes={searchedRecipes} /> }
       { searchResults.loading && <Loader /> }
       { searchResults.error && <p>Could not search, please try again</p> }

@@ -39,13 +39,13 @@ const Card = ({ recipeData }) => {
     
     return (
         <div className='recipe-card'>
-            <img src={recipeData.thumbnail_url} />
+            <img src={recipeData.thumbnail_url} alt="Recipe Thumbnail" />
             <section className='card-info'>
-                <div>
+                <div className='card-text'>
                     <h3 className='recipe-title'>{recipeData.name}</h3>
-                    <p className='recipe-description'>{recipeData.description.slice(0, 120)}...</p>
+                    <p className='recipe-description' >{ recipeData.description && recipeData.description.slice(0, 120)}...</p>
                 </div>
-                <div>
+                <div className='card-btn'>
                     <Link to="/recipedetails" state={ {recipeData:recipeData} }>
                     <button className="details-btn">see details</button>
                     </Link>
