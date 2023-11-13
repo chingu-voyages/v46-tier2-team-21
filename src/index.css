@@ -13,7 +13,12 @@ body {
   --BGCOLOR: #E7DCD0;
   --PRIMARYCOLOR: #F21D2F;
   --WHITE: white;
+}
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 span#light_text {
