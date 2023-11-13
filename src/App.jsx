@@ -1,7 +1,8 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
-import Home from './components/home/home'
+import Footer from './components/footer/footer';
+import Home from './components/home/home';
 import ExploreRecipe from './components/explore/exploreRecipe';
 import RecipeDetails from './components/recipedetails/recipeDetails';
 import Savedresults from './components/saveList/savedresults';
@@ -21,6 +22,7 @@ function App() {
             <Route path="/recipedetails" element={<RecipeDetails/>} />
             <Route path="/saved-list" element={<Savedresults/>} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </RecipeProvider>
     </>
